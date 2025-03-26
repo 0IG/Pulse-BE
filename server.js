@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 8000;
 app.use(cors());
 app.use(express.json());
 
-app.post('/api/check-breach', async (req, res) => {
+app.post('/api/check_breach', async (req, res) => {
   const { email } = req.body;
 
   try {
@@ -33,6 +33,7 @@ app.post('/api/check-breach', async (req, res) => {
     }
   }
 });
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
